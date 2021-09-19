@@ -4,9 +4,11 @@
 <html>
 <head>
 <script>
-  fetch('https://restcountries.eu/rest/v2/all')
+   fetch('https://restcountries.eu/rest/v2/all')
   .then(data => data.json())
-  .then(countries => console.log(countries))
+  .then(countries => data.filter(obj=> obj.population >10000000);
+  console.log(countries);
+  )
 </script>
 </head>
 </html>
